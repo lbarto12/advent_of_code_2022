@@ -2,7 +2,7 @@
 
 ### Python
 
-The logic for this function is entirely contained in `get_marker_location(stream, block_size)`.
+The logic for this problem is entirely contained in `get_marker_location(stream, block_size)`.
 
 The function begins by creating a string `packet` of length `block_size` initialized with 0's to act as a kind of viewport, since we need to view `block_size` characters from the stream at a time
 
