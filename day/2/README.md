@@ -2,7 +2,7 @@
 
 ### All
 
-    The above dictionaries/maps used are essentially a schema for what should happen if a
+    The dictionaries/maps used are essentially a schema for what should happen if a
     particular move is played by the opponent and the player.
 
     e.g.
