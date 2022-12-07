@@ -6,11 +6,9 @@
 
 ### Understanding The Solutions
 
-If at any point you get stuck understanding the solutions, you can find a breakdown of the steps in the day's associated Python file.
+If at any point you get stuck understanding the solutions, you can find a breakdown of the steps in the day's README.
 
-This is because I do the problems in python first, then translate them to the other languages.
-
-If there is ever a discrepency in solutions between languages, there will be an associated unique description in that language's file.
+If there is ever a discrepency in solutions between languages, there will be an associated unique description in that README.
 
 ### Outside Contributions
 
