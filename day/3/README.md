@@ -4,20 +4,20 @@
 
 #### Part 1
 
-    first, iterates over each line in the file and splits it in half into 'r1' 'r2',
-    representing the two rucksacks each elf is carrying.
+first, iterates over each line in the file and splits it in half into 'r1' 'r2',
+representing the two rucksacks each elf is carrying.
 
-    then it turns the strings into sets, and finds the intersection between the two of
-    them, i.e. the items that are in both rucksacks.
+then it turns the strings into sets, and finds the intersection between the two of
+them, i.e. the items that are in both rucksacks.
 
-    once it funds the intersection, it finds that item's priority in the priority dict,
-    and adds it to the running sum.
+once it funds the intersection, it finds that item's priority in the priority dict,
+and adds it to the running sum.
 
 #### Part 2
 
-    first, it stores each collection of 3 lines from the input in a list of sets, while
-    checking that the first set in the list is not empty, as this would mean you've
-    reached the end of the file.
+first, it stores each collection of 3 lines from the input in a list of sets, while
+checking that the first set in the list is not empty, as this would mean you've
+reached the end of the file.
 
-    finally, it finds the intersection of the three sets, finds the item's priority, and
-    adds it to the running sum.
+finally, it finds the intersection of the three sets, finds the item's priority, and
+adds it to the running sum.
