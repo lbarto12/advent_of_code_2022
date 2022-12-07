@@ -12,6 +12,6 @@ e.g "000h" => "00hs" => "0hsk" => "hsks"
 
 Essentially sliding the stream over `packet` to view `block_size` characters each iteration
 
-Then, function checks whether there are any duplicates in the string by comparing the lengths of a set that holds all the characters, and the `block_size`. If there are no duplicates, the function returns the current value of `i` + 1 to get the position of the first found marker.
+Then, the function checks whether there are any duplicates in the string by comparing the lengths of a set that holds all the characters, and the `block_size`. If there are no duplicates, the function returns the current value of `i` + 1 to get the position of the first found marker.
 
 This function is re-used in part 2 with a block_size of 14
