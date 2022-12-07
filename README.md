@@ -1,6 +1,8 @@
 # Advent of Code 2022: Solutions
 
-### Answers to advent of code problems 2022, completed in mutiple languages => C++, Java, Python, and JavaScript
+### Answers to advent of code problems 2022, completed in mutiple languages:
+
+### (C++, Java, Python, and JavaScript)
 
 ### Understanding The Solutions
 
