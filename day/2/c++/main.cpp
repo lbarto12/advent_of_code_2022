@@ -1,3 +1,4 @@
+#include "../../../util/CPPutil.h"
 #include <fstream>
 #include <iostream>
 #include <string>
@@ -29,12 +30,11 @@ std::unordered_map<char, std::unordered_map<char, char>> actions = {{
 }};
 
 int main() {
-    auto file = std::ifstream("../input.txt");
-    std::string line;
+    auto file = ADVENT::getInputLines();
 
     size_t part_1_sum = 0, part_2_sum = 0;
 
-    while (std::getline(file, line)) {
+    for (const auto &line : file) {
         char opponent = line[0], me = line[2];
 
         // Part 1
