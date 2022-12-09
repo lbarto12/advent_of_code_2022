@@ -1,3 +1,4 @@
+#include "../../../util/CPPutil.h"
 #include <algorithm>
 #include <fstream>
 #include <iostream>
@@ -5,14 +6,12 @@
 #include <vector>
 
 int main() {
-
-    auto myfile = std::ifstream("../input.txt");
+    auto file = ADVENT::getInputLines();
     std::vector<std::vector<size_t>> elves = {{}};
 
-    std::string line;
     size_t index = 0;
 
-    while (std::getline(myfile, line)) {
+    for (const auto &line : file) {
         if (line == "") {
             elves.push_back({});
             index++;
@@ -22,7 +21,6 @@ int main() {
     }
 
     std::vector<size_t> sums;
-
     for (const auto &elf : elves) {
         size_t sum = 0;
         for (const auto &num : elf)
