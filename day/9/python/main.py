@@ -22,7 +22,7 @@ def move_toward(c1, c2):
 
 
 def merge_tuples(*tuples):
-    return tuple(map(lambda f: sum(f), zip(*tuples)))
+    return tuple(sum(i) for i in zip(*tuples))
 
 
 class Rope:
