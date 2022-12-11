@@ -5,12 +5,10 @@
 
 std::unordered_map<char, int> createPriorities() {
     std::unordered_map<char, int> priorities;
-    for (char c = 'a'; c <= 'z'; ++c) {
+    for (char c = 'a'; c <= 'z'; ++c)
         priorities[c] = c - 'a' + 1;
-    }
-    for (char c = 'A'; c <= 'Z'; ++c) {
+    for (char c = 'A'; c <= 'Z'; ++c)
         priorities[c] = c - 'A' + 26 + 1;
-    }
     return priorities;
 }
 
