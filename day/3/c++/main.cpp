@@ -32,9 +32,9 @@ int main() {
 
     for (int i = 0; i < lines.size(); i += 3) {
         std::vector<std::vector<char>> groups = {
-            ADVENT::sliceStr(lines[i], 0, -1),
-            ADVENT::sliceStr(lines[i + 1], 0, -1),
-            ADVENT::sliceStr(lines[i + 2], 0, -1),
+            ADVENT::sliceStr(lines[i]),
+            ADVENT::sliceStr(lines[i + 1]),
+            ADVENT::sliceStr(lines[i + 2]),
         };
         part2Sum += priority[ADVENT::intersection<char>(groups)];
     }

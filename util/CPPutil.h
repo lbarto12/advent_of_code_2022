@@ -51,7 +51,7 @@ T intersection(std::vector<std::vector<T>> lists) {
     return T();
 }
 
-std::vector<char> sliceStr(const std::string &str, int start, int end) {
+std::vector<char> sliceStr(const std::string &str, int start = 0, int end = -1) {
     if (end == -1)
         end = str.size();
     std::vector<char> sliced;
