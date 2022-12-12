@@ -61,4 +61,20 @@ std::vector<char> sliceStr(const std::string &str, int start = 0, int end = -1) 
     return sliced;
 }
 
+std::vector<std::string> splitStr(const std::string &str, char delim = ' ') {
+    std::vector<std::string> split;
+    std::stringstream ss(str);
+    std::string item;
+    while (std::getline(ss, item, delim))
+        split.push_back(item);
+    return split;
+}
+
+std::vector<int> makeRange(int start, int end) {
+    std::vector<int> range;
+    for (int i = start; i < end; ++i)
+        range.push_back(i);
+    return range;
+}
+
 } // namespace ADVENT
