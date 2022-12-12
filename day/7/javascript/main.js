@@ -23,7 +23,7 @@ function get_files(file) {
   return [this_dir_size, [this_dir_size, ...files]];
 }
 
-async function main() {
+(async function main() {
   const input = await getInput();
   const lines = input.split("\r\n");
 
@@ -44,6 +44,4 @@ async function main() {
     }
     return true;
   });
-}
-
-main();
+})();

@@ -39,7 +39,7 @@ function get_tree_stats(location, forest) {
   return [is_visible, scores.reduce((acc, cur) => acc * cur, 1)];
 }
 
-async function main() {
+(async function main() {
   const input = await getInput();
   const trees = input.split("\r\n").map((line) => line.split(""));
 
@@ -56,6 +56,4 @@ async function main() {
 
   console.log(`Part 1: ${num_visible}`);
   console.log(`Part 2: ${Math.max(...scenic_scores)}`);
-}
-
-main();
+})();

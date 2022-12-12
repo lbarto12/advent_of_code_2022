@@ -8,10 +8,8 @@ function getMarkerLocation(stream, block_size) {
   }
 }
 
-async function main() {
+(async function main() {
   const input = await getInput();
   console.log(`Part 1: ${getMarkerLocation(input, 4)}`);
   console.log(`Part 2: ${getMarkerLocation(input, 14)}`);
-}
-
-main();
+})();

@@ -24,7 +24,7 @@ const actions = {
   Z: { A: "Y", B: "Z", C: "X" },
 };
 
-async function main() {
+(async function main() {
   const input = (await getInput()).split("\r\n");
 
   let part_1_sum = 0;
@@ -43,6 +43,4 @@ async function main() {
 
   console.log(`Part 1: ${part_1_sum}`);
   console.log(`Part 2: ${part_2_sum}`);
-}
-
-main();
+})();
